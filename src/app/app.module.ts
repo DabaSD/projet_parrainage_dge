@@ -14,7 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfilUserComponent } from './profil-user/profil-user.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'connexion', pathMatch: 'full' },
+    { path: '', component: AppComponent },
     { path: 'connexion', component: LoginPageComponent },
     { path: 'fichierElectoral', component: UploadFichierElectoralComponent },
     { path: 'AjoutCandidat', component: AjoutCandidatComponent },
@@ -36,7 +36,7 @@ const routes: Routes = [
     SearchCandidatComponent,
     ListeCandidatComponent,
     DashboardComponent,
-    ProfilUserComponent
+    ProfilUserComponent,
   ],
   imports: [
     BrowserModule,
