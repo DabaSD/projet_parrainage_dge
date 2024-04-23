@@ -16,10 +16,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfilUserComponent } from './profil-user/profil-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 const routes: Routes = [
 
     { path: '', component: AppComponent },
-    { path: 'connexion', component: LoginPageComponent },
+    {path: 'connexion', component: LoginPageComponent,},
     { path: 'fichierElectoral', component: UploadFichierElectoralComponent },
     { path: 'AjoutCandidat', component: AjoutCandidatComponent },
     { path: 'gestionParrainage', component: GestionParrainageComponent },
@@ -28,6 +29,10 @@ const routes: Routes = [
     { path: 'profilUser', component: ProfilUserComponent },
     { path: 'listeCandidat', component: ListeCandidatComponent },
     { path: 'header', component: HeaderComponent },
+    { path: 'sidenav', component: SideNavComponent },
+    { path: 'dashboard', component: DashboardComponent },
+
+
 
 ];
 
